@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet add *)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet run *)",
+      "Bash(taskkill *)",
+      "PowerShell(Stop-Process *)",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\lelopezdev\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\" -Filter \"*.razor\")",
+      "Bash(Select-Object FullName)",
+      "Bash(curl *)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
