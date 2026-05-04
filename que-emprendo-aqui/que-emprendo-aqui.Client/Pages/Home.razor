@@ -202,32 +202,49 @@
 </section>
 
 <!-- CTA Banner -->
-<section style="background:#f8fafc; padding:2rem 0 3rem;">
+<section style="background:#f8fafc; padding:2rem 0 4rem;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
-        <MudPaper Elevation="0" Style="background:#1e3a8a; border-radius:1.25rem; padding:2.5rem 3rem; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:2rem;">
-            <div>
-                <MudText Typo="Typo.h5" Style="font-weight:800; color:white; margin-bottom:0.4rem;">
-                    ¿Listo para encontrar tu negocio?
-                </MudText>
-                <MudText Typo="Typo.body2" Style="color:#93c5fd;">
-                    Tarda menos que pedir un café. Y te ahorra perder un año de tu vida.
-                </MudText>
+        <div class="cta-banner">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:3rem; padding:3rem 3.5rem;">
+
+                <!-- Texto -->
+                <div style="max-width:480px;">
+                    <MudText Typo="Typo.h4" Style="font-weight:800; color:white; margin-bottom:0.75rem; letter-spacing:-0.02em; line-height:1.15;">
+                        Encuentra un negocio viable en tu zona.
+                    </MudText>
+                    <MudText Typo="Typo.body1" Style="color:rgba(255,255,255,0.58); line-height:1.6;">
+                        Analizamos datos reales y te mostramos solo lo que tiene sentido para tu colonia y tu presupuesto.
+                    </MudText>
+                </div>
+
+                <!-- Botón + trust signals -->
+                <div style="display:flex; flex-direction:column; align-items:flex-start; gap:1rem;">
+                    <button class="cta-primary-btn">
+                        Analizar mi zona <span class="cta-arrow">→</span>
+                    </button>
+                    <div style="display:flex; flex-direction:column; gap:0.3rem;">
+                        <span style="color:rgba(255,255,255,0.45); font-size:0.78rem;">✔ Basado en datos reales del INEGI</span>
+                        <span style="color:rgba(255,255,255,0.45); font-size:0.78rem;">✔ Resultados en segundos</span>
+                    </div>
+                </div>
+
             </div>
-            <MudButton Variant="Variant.Filled"
-                       EndIcon="@Icons.Material.Filled.ArrowForward"
-                       Style="border-radius:0.75rem; text-transform:none; background:white; color:#1e3a8a; padding:0.625rem 1.5rem; white-space:nowrap; font-weight:600;">
-                Analizar mi zona
-            </MudButton>
-        </MudPaper>
+        </div>
     </MudContainer>
 </section>
 
 <!-- Footer -->
-<footer style="background:#f8fafc; border-top:1px solid #e5e7eb; padding:1.5rem 0;">
+<footer style="background:#f8fafc; border-top:1px solid #e5e7eb; padding:2rem 0;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
-        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem;">
-            <MudText Typo="Typo.body2" Style="color:#9ca3af;">
-                © 2025 ¿Qué emprendo aquí? · Hecho en México
+        <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:1rem;">
+            <!-- Marca -->
+            <div>
+                <MudText Typo="Typo.body1" Style="font-weight:700; color:#111827;">¿Qué emprendo aquí?</MudText>
+                <MudText Typo="Typo.caption" Style="color:#9ca3af; display:block; margin-top:0.2rem;">Hecho en México</MudText>
+            </div>
+            <!-- Legal -->
+            <MudText Typo="Typo.caption" Style="color:#9ca3af;">
+                © @DateTime.Now.Year · Datos públicos (INEGI)
             </MudText>
         </div>
     </MudContainer>
