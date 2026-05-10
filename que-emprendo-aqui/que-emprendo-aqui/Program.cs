@@ -1,3 +1,4 @@
+using Infrastructure.ExternalServices.Inegi;
 using MudBlazor.Services;
 using que_emprendo_aqui.Client.Components;
 
@@ -8,6 +9,8 @@ builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
 builder.Services.AddMudServices();
+
+builder.Services.AddInegi(builder.Configuration);
 
 var app = builder.Build();
 

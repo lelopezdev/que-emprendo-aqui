@@ -421,6 +421,11 @@ FodyWeavers.xsd
 # Built Visual Studio Code Extensions
 *.vsix
 
+# ASP.NET Core appsettings (may contain secrets)
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+
 # Windows Installer files from build outputs
 *.cab
 *.msi

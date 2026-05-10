@@ -1,6 +1,6 @@
 ﻿namespace Features.LocationAnalysis.AnalyzeLocation;
 
-    public class AnalyzeLocationEndpoint
+public class AnalyzeLocationEndpoint
 {
 }
 
