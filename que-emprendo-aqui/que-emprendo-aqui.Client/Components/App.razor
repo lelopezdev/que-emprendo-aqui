@@ -6,16 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
     <link rel="stylesheet" href="css/app.css" asp-append-version="true" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/@@phosphor-icons/web@2.1.1/src/light/style.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <HeadOutlet />
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <img src="favicon.svg" width="24" height="24" alt="" aria-hidden="true" />
+                ¿Qué emprendo aquí?
+            </div>
+            <div class="nav-github-wrap">
+                <a class="github-button" href="https://github.com/lelopezdev/que-emprendo-aqui/subscription" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Watch lelopezdev/que-emprendo-aqui on GitHub">Watch</a>
+            </div>
+        </div>
+    </nav>
     <Routes />
     <script src="_framework/blazor.web.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
     <script src="https://unpkg.com/@@lottiefiles/dotlottie-wc@@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>

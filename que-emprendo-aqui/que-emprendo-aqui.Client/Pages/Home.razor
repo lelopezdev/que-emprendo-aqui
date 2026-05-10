@@ -3,77 +3,40 @@
 
 <PageTitle>¿Qué emprendo aquí?</PageTitle>
 
-<section id="analizar" style="background:white;">
-    <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="padding-top:5rem; padding-bottom:5rem;">
-        <MudGrid Spacing="6" AlignItems="Center">
+<section id="analizar" class="hero-new" style="background:#ffffff;">
+    <div class="hero-glow"></div>
 
-            <!-- Texto -->
-            <MudItem xs="12" lg="6">
-                <div class="animate-fadein-up" style="display:flex; flex-direction:column; gap:1.5rem;">
+    <!-- Bloque de texto centrado -->
+    <MudContainer MaxWidth="MaxWidth.Medium" Style="padding-top:5rem; padding-bottom:5rem; position:relative; z-index:1;">
+        <div class="hero-center-block animate-fadein-up">
 
-                    <MudText Typo="Typo.h1" Class="hero-text" Style="font-weight:900; line-height:1; color:#111827; letter-spacing:-0.04em;">
-                        ¿Qué emprendo aquí?
-                    </MudText>
+            <h1 class="hero-h1">No abras un negocio<br />a ciegas.</h1>
 
-                    <MudText Typo="Typo.body1" Class="hero-text" Style="color:#6b7280; line-height:1.7;">
-                        Antes de invertir, ¿sabes qué negocio funciona en tu zona?
-                        Cruzamos datos del INEGI con análisis de IA para decirte qué tipo
-                        de negocio tiene mayor probabilidad de éxito en tu colonia, según
-                        tu presupuesto y la competencia local.
-                    </MudText>
+            <p class="hero-sub-new">
+                Analizamos datos del INEGI y competencia local<br />
+                para detectar oportunidades reales en tu ubicación.
+            </p>
 
-                    <div class="hero-buttons">
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary"
-                                   StartIcon="@Icons.Material.Filled.Search"
-                                   Style="border-radius:0.75rem; text-transform:none; padding:0.5rem 1.5rem;">
-                            Analizar mi zona
-                        </MudButton>
-                    </div>
+            <div class="hero-btn-row">
+                <button class="hero-cta-primary">Analizar mi ubicación →</button>
+            </div>
 
-                    <div class="mobile-tags">
-                        <span class="tag-pill">☕ Cafetería</span>
-                        <span class="tag-pill">🧺 Lavandería</span>
-                        <span class="tag-pill">✂️ Estética</span>
-                        <span class="tag-pill">🛒 Abarrotes</span>
-                        <span class="tag-pill">🍽️ Lonchería</span>
-                    </div>
+            <div class="hero-trust-row">
+                <span>Basado en datos de</span>
+                <strong>INEGI</strong>
+                <span class="trust-sep">·</span>
+                <strong>DENUE</strong>
+                <span class="trust-sep">·</span>
+                <span>+2.4M unidades analizadas</span>
+            </div>
 
-                </div>
-            </MudItem>
-
-            <!-- Ilustración (solo desktop) -->
-            <MudItem xs="12" lg="6">
-                <div class="illustration-col animate-fadein-up"
-                     style="animation-delay:0.25s; position:relative; justify-content:center; align-items:center; height:460px;">
-
-                    <div style="position:absolute; width:400px; height:400px; border-radius:50%; background:radial-gradient(circle,#dbeafe 0%,#eff6ff 55%,transparent 80%);"></div>
-
-                    <dotlottie-wc src="https://lottie.host/79cb7df6-4e85-4d96-9567-a896c7f2fdff/oaz7fAq7vU.lottie"
-                                  style="width:400px;height:400px;position:relative;z-index:2;"
-                                  autoplay loop>
-                    </dotlottie-wc>
-
-                    <!-- Tags flotantes -->
-                    <div class="animate-float tag-pill" style="animation-delay:0s;   position:absolute; top:8%;    left:8%;   z-index:10; box-shadow:0 4px 6px -1px rgba(0,0,0,.1); white-space:nowrap;"><span>☕</span> Cafetería</div>
-                    <div class="animate-float tag-pill" style="animation-delay:0.7s; position:absolute; top:3%;    right:4%;  z-index:10; box-shadow:0 4px 6px -1px rgba(0,0,0,.1); white-space:nowrap;"><span>🧺</span> Lavandería</div>
-                    <div class="animate-float tag-pill" style="animation-delay:1.5s; position:absolute; top:43%;   right:1%;  z-index:10; box-shadow:0 4px 6px -1px rgba(0,0,0,.1); white-space:nowrap;"><span>✂️</span> Estética <span style="color:#9ca3af; font-size:0.7rem;">✕</span></div>
-                    <div class="animate-float tag-pill" style="animation-delay:2.3s; position:absolute; top:58%;   left:2%;   z-index:10; box-shadow:0 4px 6px -1px rgba(0,0,0,.1); white-space:nowrap;"><span>🛒</span> Abarrotes</div>
-                    <div class="animate-float tag-pill" style="animation-delay:0.4s; position:absolute; bottom:16%; right:8%; z-index:10; box-shadow:0 4px 6px -1px rgba(0,0,0,.1); white-space:nowrap;"><span>🍽️</span> Lonchería</div>
-
-                    <!-- Destellos -->
-                    <span class="animate-sparkle" style="animation-delay:0s;   position:absolute; top:24%;    left:44%;  z-index:5; color:#fbbf24; font-size:1.125rem; line-height:1;">✦</span>
-                    <span class="animate-sparkle" style="animation-delay:1.3s; position:absolute; top:62%;    right:23%; z-index:5; color:#fbbf24; font-size:1.125rem; line-height:1;">✦</span>
-                    <span class="animate-sparkle" style="animation-delay:2.1s; position:absolute; bottom:34%; left:18%;  z-index:5; color:#fbbf24; font-size:1.125rem; line-height:1;">✦</span>
-
-                </div>
-            </MudItem>
-
-        </MudGrid>
+        </div>
     </MudContainer>
+
 </section>
 
 <!-- Cómo funciona -->
-<section id="como-funciona" style="background:#f8fafc; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb;">
+<section id="como-funciona" style="background:#fefce8; border-top:1px solid #fde68a; border-bottom:1px solid #fde68a;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="padding-top:4rem; padding-bottom:4rem;">
 
         <!-- Encabezado centrado -->
@@ -84,7 +47,7 @@
             <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; line-height:1.1; letter-spacing:-0.03em;">
                 Tres pasos. Un resultado claro.
             </MudText>
-            <MudText Typo="Typo.body1" Style="color:#9ca3af; margin-top:0.4rem; line-height:1.4;">
+            <MudText Typo="Typo.body1" Class="section-sub" Style="margin-top:0.4rem;">
                 Sin experiencia. Sin suposiciones. Solo datos reales.
             </MudText>
         </div>
@@ -99,7 +62,7 @@
                 <!-- Centro: mock resultado -->
                 <div class="circ-center">
                     <div class="circ-center-label">Tu resultado</div>
-                    <div class="circ-center-emoji">☕</div>
+                    <div class="circ-center-emoji"><i class="ph-light ph-coffee"></i></div>
                     <div class="circ-center-name">Cafetería de barrio</div>
                     <div class="circ-center-score">87% viable</div>
                     <div class="circ-center-inv">~$18,000 MXN</div>
@@ -107,21 +70,21 @@
 
                 <!-- Paso 1: arriba -->
                 <div class="circ-step circ-step-top">
-                    <div class="circ-step-icon">📍</div>
+                    <div class="circ-step-icon"><i class="ph-light ph-map-pin"></i></div>
                     <div class="circ-step-title">Selecciona tu zona</div>
                     <div class="circ-step-desc">Detectamos oportunidades cercanas automáticamente.</div>
                 </div>
 
                 <!-- Paso 2: abajo izquierda -->
                 <div class="circ-step circ-step-left">
-                    <div class="circ-step-icon">💰</div>
+                    <div class="circ-step-icon"><i class="ph-light ph-wallet"></i></div>
                     <div class="circ-step-title">Define tu presupuesto</div>
                     <div class="circ-step-desc">No importa cuánto tienes, importa dónde lo pones.</div>
                 </div>
 
                 <!-- Paso 3: abajo derecha -->
                 <div class="circ-step circ-step-right">
-                    <div class="circ-step-icon">🎯</div>
+                    <div class="circ-step-icon"><i class="ph-light ph-chart-line-up"></i></div>
                     <div class="circ-step-title">Recibe oportunidades reales</div>
                     <div class="circ-step-desc">Con score de viabilidad e inversión estimada.</div>
                 </div>
@@ -132,21 +95,21 @@
         <!-- Lista mobile (oculta en desktop) -->
         <div class="circ-mobile-list">
             <div class="circ-mobile-step">
-                <span class="circ-mobile-icon">📍</span>
+                <span class="circ-mobile-icon"><i class="ph-light ph-map-pin"></i></span>
                 <div>
                     <div class="circ-step-title">Selecciona tu zona</div>
                     <div class="circ-step-desc">Detectamos oportunidades cercanas automáticamente.</div>
                 </div>
             </div>
             <div class="circ-mobile-step">
-                <span class="circ-mobile-icon">💰</span>
+                <span class="circ-mobile-icon"><i class="ph-light ph-wallet"></i></span>
                 <div>
                     <div class="circ-step-title">Define tu presupuesto</div>
                     <div class="circ-step-desc">No importa cuánto tienes, importa dónde lo pones.</div>
                 </div>
             </div>
             <div class="circ-mobile-step">
-                <span class="circ-mobile-icon">🎯</span>
+                <span class="circ-mobile-icon"><i class="ph-light ph-chart-line-up"></i></span>
                 <div>
                     <div class="circ-step-title">Recibe oportunidades reales</div>
                     <div class="circ-step-desc">Con score de viabilidad e inversión estimada.</div>
@@ -158,7 +121,7 @@
 </section>
 
 <!-- Por qué importa -->
-<section style="background:#f8fafc; padding:5rem 0;">
+<section style="background:#ffffff; padding:5rem 0;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
 
         <div style="text-align:center; margin-bottom:3rem;">
@@ -168,7 +131,7 @@
             <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; line-height:1.15; letter-spacing:-0.03em;">
                 El 75% de los negocios cierran antes del 2° año.
             </MudText>
-            <MudText Typo="Typo.body1" Style="color:#6b7280; margin-top:0.75rem; line-height:1.65;">
+            <MudText Typo="Typo.body1" Class="section-sub" Style="margin-top:0.75rem;">
                 La mayoría no falla por mala ejecución — falla por elegir el negocio equivocado para el lugar equivocado. Aquí lo evitas.
             </MudText>
         </div>
@@ -193,7 +156,7 @@
 </section>
 
 <!-- CTA Banner -->
-<section style="background:#f8fafc; padding:2rem 0 4rem;">
+<section style="background:#ffffff; padding:2rem 0 4rem;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
         <div class="cta-banner">
             <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:3rem; padding:3rem 3.5rem;">
@@ -203,15 +166,15 @@
                     <MudText Typo="Typo.h4" Style="font-weight:800; color:white; margin-bottom:0.75rem; letter-spacing:-0.02em; line-height:1.15;">
                         Encuentra un negocio viable en tu zona.
                     </MudText>
-                    <MudText Typo="Typo.body1" Style="color:rgba(255,255,255,0.58); line-height:1.6;">
-                        Analizamos datos reales y te mostramos solo lo que tiene sentido para tu colonia y tu presupuesto.
+                    <MudText Typo="Typo.body1" Class="section-sub-inverse">
+                        Analizamos datos reales y te mostramos solo lo que tiene sentido para tu ubicación y tu presupuesto.
                     </MudText>
                 </div>
 
                 <!-- Botón + trust signals -->
                 <div style="display:flex; flex-direction:column; align-items:flex-start; gap:1rem;">
                     <button class="cta-primary-btn">
-                        Analizar mi zona <span class="cta-arrow">→</span>
+                        Analizar mi ubicación <span class="cta-arrow">→</span>
                     </button>
                     <div style="display:flex; flex-direction:column; gap:0.3rem;">
                         <span style="color:rgba(255,255,255,0.45); font-size:0.78rem;">✔ Basado en datos reales del INEGI</span>
@@ -225,7 +188,7 @@
 </section>
 
 <!-- Footer -->
-<footer style="background:#f8fafc; border-top:1px solid #e5e7eb; padding:2rem 0;">
+<footer style="background:#fefce8; border-top:1px solid #fde68a; padding:2rem 0;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
         <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:1rem;">
             <!-- Marca -->
