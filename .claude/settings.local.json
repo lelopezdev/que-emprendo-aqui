@@ -14,7 +14,10 @@
       "Bash(npm run *)",
       "Bash(Get-ChildItem -Recurse -File)",
       "PowerShell(Get-Content *)",
-      "Bash(Get-ChildItem C:\\\\temp\\\\que-emprendo-aqui *)"
+      "Bash(Get-ChildItem C:\\\\temp\\\\que-emprendo-aqui *)",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\temp\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\\\\wwwroot\")",
+      "PowerShell(head *)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\temp\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\" | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty FullName)"
     ]
   }
 }

@@ -1,6 +1,5 @@
 @page "/"
 @using MudBlazor
-@rendermode InteractiveWebAssembly
 
 <PageTitle>¿Qué emprendo aquí?</PageTitle>
 
@@ -12,12 +11,12 @@
             <MudItem xs="12" lg="6">
                 <div class="animate-fadein-up" style="display:flex; flex-direction:column; gap:1.5rem;">
 
-                    <MudText Typo="Typo.h3" Class="hero-text" Style="font-weight:800; line-height:1.2; color:#111827;">
-                        Antes de invertir,<br />
-                        ¿Sabes <span style="color:#1e3a8a;">qué negocio<br /> funciona</span> en tu zona?
+                    <MudText Typo="Typo.h1" Class="hero-text" Style="font-weight:900; line-height:1; color:#111827; letter-spacing:-0.04em;">
+                        ¿Qué emprendo aquí?
                     </MudText>
 
-                    <MudText Typo="Typo.body1" Class="hero-text" Style="color:#6b7280; line-height:1.6;">
+                    <MudText Typo="Typo.body1" Class="hero-text" Style="color:#6b7280; line-height:1.7;">
+                        Antes de invertir, ¿sabes qué negocio funciona en tu zona?
                         Cruzamos datos del INEGI con análisis de IA para decirte qué tipo
                         de negocio tiene mayor probabilidad de éxito en tu colonia, según
                         tu presupuesto y la competencia local.
@@ -28,11 +27,6 @@
                                    StartIcon="@Icons.Material.Filled.Search"
                                    Style="border-radius:0.75rem; text-transform:none; padding:0.5rem 1.5rem;">
                             Analizar mi zona
-                        </MudButton>
-                        <MudButton Variant="Variant.Text" Color="Color.Default"
-                                   EndIcon="@Icons.Material.Filled.ArrowForward"
-                                   Style="border-radius:0.75rem; text-transform:none;">
-                            Ver cómo funciona
                         </MudButton>
                     </div>
 
@@ -82,74 +76,82 @@
 <section id="como-funciona" style="background:#f8fafc; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="padding-top:4rem; padding-bottom:4rem;">
 
-        <!-- Encabezado -->
-        <div style="margin-bottom:3rem;">
+        <!-- Encabezado centrado -->
+        <div style="text-align:center; margin-bottom:3rem;">
             <MudText Typo="Typo.overline" Style="color:#1e3a8a; font-weight:700; letter-spacing:0.1em;">
                 CÓMO FUNCIONA
             </MudText>
-            <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; max-width:640px; line-height:1.1; letter-spacing:-0.03em;">
-                Invierte en negocios rentables en tu zona,
+            <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; line-height:1.1; letter-spacing:-0.03em;">
+                Tres pasos. Un resultado claro.
             </MudText>
-            <MudText Typo="Typo.h5" Style="font-weight:400; color:#9ca3af; margin-top:0.2rem; max-width:560px; line-height:1.3; letter-spacing:-0.01em;">
+            <MudText Typo="Typo.body1" Style="color:#9ca3af; margin-top:0.4rem; line-height:1.4;">
                 Sin experiencia. Sin suposiciones. Solo datos reales.
             </MudText>
         </div>
 
-        <!-- Cards con conectores -->
-        <div class="steps-container">
+        <!-- Diagrama circular (desktop) / lista (mobile) -->
+        <div class="circ-wrap">
+            <div class="circ-diagram">
 
-            <!-- Card 01: icono eliminado, número es el anchor -->
-            <div class="step-card-wrap">
-                <MudPaper Elevation="0" Class="step-card" Style="border:1px solid #e5e7eb; border-radius:1rem; padding:2rem 2rem 1.75rem; background:white; position:relative; overflow:hidden;">
-                    <span class="step-number" style="position:absolute; top:0.5rem; right:1rem; font-size:5rem; font-weight:900; color:#f1f5f9; line-height:1; user-select:none; pointer-events:none;">01</span>
-                    <div style="padding-top:3rem;">
-                        <MudText Typo="Typo.h6" Style="font-weight:700; color:#111827; margin-bottom:0.5rem; letter-spacing:-0.02em;">
-                            Selecciona tu zona
-                        </MudText>
-                        <MudText Typo="Typo.body2" Style="color:#6b7280; line-height:1.65;">
-                            Detectamos oportunidades cercanas automáticamente.
-                        </MudText>
-                        <span class="step-micro-cta">→ Permitir ubicación</span>
-                    </div>
-                </MudPaper>
+                <!-- Anillo decorativo -->
+                <div class="circ-ring"></div>
+
+                <!-- Centro: mock resultado -->
+                <div class="circ-center">
+                    <div class="circ-center-label">Tu resultado</div>
+                    <div class="circ-center-emoji">☕</div>
+                    <div class="circ-center-name">Cafetería de barrio</div>
+                    <div class="circ-center-score">87% viable</div>
+                    <div class="circ-center-inv">~$18,000 MXN</div>
+                </div>
+
+                <!-- Paso 1: arriba -->
+                <div class="circ-step circ-step-top">
+                    <div class="circ-step-icon">📍</div>
+                    <div class="circ-step-title">Selecciona tu zona</div>
+                    <div class="circ-step-desc">Detectamos oportunidades cercanas automáticamente.</div>
+                </div>
+
+                <!-- Paso 2: abajo izquierda -->
+                <div class="circ-step circ-step-left">
+                    <div class="circ-step-icon">💰</div>
+                    <div class="circ-step-title">Define tu presupuesto</div>
+                    <div class="circ-step-desc">No importa cuánto tienes, importa dónde lo pones.</div>
+                </div>
+
+                <!-- Paso 3: abajo derecha -->
+                <div class="circ-step circ-step-right">
+                    <div class="circ-step-icon">🎯</div>
+                    <div class="circ-step-title">Recibe oportunidades reales</div>
+                    <div class="circ-step-desc">Con score de viabilidad e inversión estimada.</div>
+                </div>
+
             </div>
+        </div>
 
-            <div class="step-arrow">›</div>
-
-            <!-- Card 02 -->
-            <div class="step-card-wrap">
-                <MudPaper Elevation="0" Class="step-card" Style="border:1px solid #e5e7eb; border-radius:1rem; padding:2rem 2rem 1.75rem; background:white; position:relative; overflow:hidden;">
-                    <span class="step-number" style="position:absolute; top:0.5rem; right:1rem; font-size:5rem; font-weight:900; color:#f1f5f9; line-height:1; user-select:none; pointer-events:none;">02</span>
-                    <div style="padding-top:3rem;">
-                        <MudText Typo="Typo.h6" Style="font-weight:700; color:#111827; margin-bottom:0.5rem; letter-spacing:-0.02em;">
-                            Define tu presupuesto
-                        </MudText>
-                        <MudText Typo="Typo.body2" Style="color:#6b7280; line-height:1.65;">
-                            Desde $5,000 hasta $100,000 MXN. Solo te mostramos lo que puedes pagar.
-                        </MudText>
-                        <span class="step-micro-cta">→ Ajustar presupuesto</span>
-                    </div>
-                </MudPaper>
+        <!-- Lista mobile (oculta en desktop) -->
+        <div class="circ-mobile-list">
+            <div class="circ-mobile-step">
+                <span class="circ-mobile-icon">📍</span>
+                <div>
+                    <div class="circ-step-title">Selecciona tu zona</div>
+                    <div class="circ-step-desc">Detectamos oportunidades cercanas automáticamente.</div>
+                </div>
             </div>
-
-            <div class="step-arrow">›</div>
-
-            <!-- Card 03: featured + elevada en desktop (rompe grid) -->
-            <div class="step-card-wrap step-card-featured-wrap">
-                <MudPaper Elevation="0" Class="step-card step-card-featured" Style="border:1px solid #3b82f6; border-radius:1rem; padding:2rem 2rem 1.75rem; position:relative; overflow:hidden;">
-                    <span class="step-number" style="position:absolute; top:0.5rem; right:1rem; font-size:5rem; font-weight:900; color:#dbeafe; line-height:1; user-select:none; pointer-events:none;">03</span>
-                    <div style="padding-top:3rem;">
-                        <MudText Typo="Typo.h6" Style="font-weight:700; color:#1e3a8a; margin-bottom:0.5rem; letter-spacing:-0.02em;">
-                            Recibe 3 oportunidades reales
-                        </MudText>
-                        <MudText Typo="Typo.body2" Style="color:#6b7280; line-height:1.65;">
-                            Con score de viabilidad, inversión estimada y análisis de IA.
-                        </MudText>
-                        <span class="step-micro-cta">→ Ver mis oportunidades</span>
-                    </div>
-                </MudPaper>
+            <div class="circ-mobile-step">
+                <span class="circ-mobile-icon">💰</span>
+                <div>
+                    <div class="circ-step-title">Define tu presupuesto</div>
+                    <div class="circ-step-desc">No importa cuánto tienes, importa dónde lo pones.</div>
+                </div>
             </div>
-
+            <div class="circ-mobile-step">
+                <span class="circ-mobile-icon">🎯</span>
+                <div>
+                    <div class="circ-step-title">Recibe oportunidades reales</div>
+                    <div class="circ-step-desc">Con score de viabilidad e inversión estimada.</div>
+                </div>
+            </div>
         </div>
 
     </MudContainer>
@@ -159,42 +161,31 @@
 <section style="background:#f8fafc; padding:5rem 0;">
     <MudContainer MaxWidth="MaxWidth.ExtraLarge">
 
-        <div style="margin-bottom:2.5rem;">
+        <div style="text-align:center; margin-bottom:3rem;">
             <MudText Typo="Typo.overline" Style="color:#1e3a8a; font-weight:700; letter-spacing:0.12em;">
                 POR QUÉ IMPORTA
             </MudText>
-            <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; max-width:560px; line-height:1.15; letter-spacing:-0.03em;">
+            <MudText Typo="Typo.h4" Style="font-weight:900; color:#111827; margin-top:0.5rem; line-height:1.15; letter-spacing:-0.03em;">
                 El 75% de los negocios cierran antes del 2° año.
             </MudText>
-            <MudText Typo="Typo.body1" Style="color:#6b7280; margin-top:0.75rem; max-width:500px; line-height:1.65;">
+            <MudText Typo="Typo.body1" Style="color:#6b7280; margin-top:0.75rem; line-height:1.65;">
                 La mayoría no falla por mala ejecución — falla por elegir el negocio equivocado para el lugar equivocado. Aquí lo evitas.
             </MudText>
         </div>
 
-        <!-- Stats: composición tipográfica -->
-        <div class="stats-card">
-            <div class="stats-grid">
-
-                <!-- Izquierda: protagonista -->
-                <div class="stats-divider" style="padding:3.5rem 3rem 3.5rem; border-right:1px solid #f1f5f9;">
-                    <div class="stat-hero-number">75%</div>
-                    <div style="color:#9ca3af; font-size:0.875rem; margin-top:1.25rem; max-width:220px; line-height:1.55;">
-                        de negocios cierran antes del año 2 en México
-                    </div>
-                </div>
-
-                <!-- Derecha: contexto -->
-                <div style="padding:3.5rem 2.5rem; display:flex; flex-direction:column; justify-content:space-between; gap:2rem;">
-                    <div>
-                        <div style="font-size:1.75rem; font-weight:700; color:#374151; letter-spacing:-0.03em; line-height:1;">2.4M</div>
-                        <div style="color:#9ca3af; font-size:0.8rem; margin-top:0.5rem; line-height:1.5; max-width:160px;">unidades económicas en la base del INEGI</div>
-                    </div>
-                    <div>
-                        <div style="font-size:1.75rem; font-weight:700; color:#374151; letter-spacing:-0.03em; line-height:1;">~30s</div>
-                        <div style="color:#9ca3af; font-size:0.8rem; margin-top:0.5rem; line-height:1.5; max-width:160px;">tiempo promedio del análisis</div>
-                    </div>
-                </div>
-
+        <!-- Stats centradas -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">75%</div>
+                <div class="stat-label">de negocios en México cierran antes de cumplir 2 años de operación.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2.4M</div>
+                <div class="stat-label">de unidades económicas del INEGI que usamos para el análisis.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">~30s</div>
+                <div class="stat-label">es el tiempo promedio que tarda el análisis en mostrarte oportunidades reales en tu zona.</div>
             </div>
         </div>
 
