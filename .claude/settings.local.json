@@ -17,7 +17,12 @@
       "Bash(Get-ChildItem C:\\\\temp\\\\que-emprendo-aqui *)",
       "Bash(Get-ChildItem -Recurse \"C:\\\\temp\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\\\\wwwroot\")",
       "PowerShell(head *)",
-      "PowerShell(Get-ChildItem -Recurse \"C:\\\\temp\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\" | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty FullName)"
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\temp\\\\que-emprendo-aqui\\\\que-emprendo-aqui\\\\que-emprendo-aqui.Client\" | Where-Object { -not $_.PSIsContainer } | Select-Object -ExpandProperty FullName)",
+      "mcp__codegraph__codegraph_files",
+      "Bash(dotnet list *)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.nuget\\\\packages\\\\microsoft.extensions.ai\\\\10.6.0\")",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.nuget\\\\packages\\\\microsoft.extensions.ai\\\\10.6.0\\\\lib\" -Recurse | Select-Object FullName)",
+      "PowerShell(Get-ChildItem *)"
     ]
   }
 }
